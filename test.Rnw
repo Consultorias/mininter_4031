@@ -1,0 +1,33 @@
+\documentclass[a4paper12pt]{article}
+\usepackage{geometry}
+\usepackage[demo]{graphicx}
+\usepackage{titling}
+
+% set up \maketitle to accept a new item
+\predate{\begin{center}\placetitlepicture\large}
+\postdate{\par\end{center}}
+
+% commands for including the picture
+\newcommand{\titlepicture}[2][]{%
+  \renewcommand\placetitlepicture{%
+    \includegraphics[#1]{#2}\par\medskip
+  }%
+}
+\newcommand{\placetitlepicture}{} % initialization
+\title{Report}
+\author{Author}
+\date{Septembre 2013}
+\titlepicture[width=3in]{logo}
+
+% Definition of \maketitle
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\maketitle
+% \thispagestyle{empty}
+\newpage
+
+
+\section{Introduction}
+\end{document}

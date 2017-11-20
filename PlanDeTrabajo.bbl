@@ -1,0 +1,22 @@
+\begin{thebibliography}{1}
+
+\bibitem{magallanes_reyes_introducing_2017}
+Jose~Manuel Magallanes~Reyes.
+\newblock {\em Introducing to data science for social and policy research:
+  collecting to organizing data with {R} and {Python}}.
+\newblock Cambridge University Press, Cambridge, United Kingdom New York, USA
+  Port Melbourne, Australia Delhi, India Singapore, 2017.
+\newblock OCLC: 998518603.
+
+\bibitem{stevens_theory_1946}
+Stanley~S. Stevens.
+\newblock On the {Theory} of {Scales} of {Measurement}.
+\newblock {\em Science}, 103(2684):677--680, 1946.
+
+\bibitem{hollander_nonparametric_2014}
+Myles Hollander, Douglas~A. Wolfe, and Eric Chicken.
+\newblock {\em Nonparametric statistical methods}.
+\newblock John Wiley \& Sons, Inc, Hoboken, New Jersey, third edition edition,
+  2014.
+
+\end{thebibliography}
