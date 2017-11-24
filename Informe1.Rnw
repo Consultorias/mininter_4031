@@ -15,11 +15,19 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[letterpaper,11pt]{texMemo} % Set the paper size (letterpaper, a4paper, etc) and font size (10pt, 11pt or 12pt)
+\documentclass[a4paper,12pt]{texMemo} % Set the paper size (letterpaper, a4paper, etc) and font size (10pt, 11pt or 12pt)
 
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}
+\usepackage[utf8]{inputenc}
+\renewcommand{\thesection}{\Roman{section}} 
 
 \usepackage{parskip} % Adds spacing between paragraphs
 \setlength{\parindent}{15pt} % Indent paragraphs
+
+\usepackage{setspace}
+\doublespacing
+%\onehalfspacing
 
 %----------------------------------------------------------------------------------------
 %	MEMO INFORMATION
@@ -29,9 +37,9 @@
 
 \memofrom{Dr. Jos\'{e} Manuel Magallanes, PhD.\\ \emph{Consultor.}} % Sender(s)
 
-\memosubject{Plan de Trabajo (Entregable \textnumero 1).} % Memo subject
+\memosubject{Informe de Actividades realizadas en el marco de la consultor\'{i}a para brindar el \emph{Servicio Especializado de Sistematizaci\'{o}n de Registros y Sistemas de V\'{i}ctimas de Trata de Personas} .} % Memo subject
 
-\memoref{Orden de Servicio 4031.} % Date, set to \today for automatically printing todays date
+\memoref{Orden de Servicio 4031 - Primer Entregable: Plan de Trabajo } % Date, set to \today for automatically printing todays date
 
 \memodate{17 de Noviembre de 2017.} % Date, set to \today for automatically printing todays date
 
@@ -49,20 +57,66 @@
 %	MEMO CONTENT
 %----------------------------------------------------------------------------------------
 
-\noindent De mi consideraci\'{o}n,
+Tengo el agrado de dirigirme a usted, a fin de informarle sobre las acciones llevadas a cabo en el marco de la consultoría de la referencia. 
 
-Es grato dirigirme a usted a fin de saludarlo cordialmente y a su vez se\~{n}alar que mediante documento de la referencia se contrat\'{o} el \emph{servicio especializado de sistematizaci\'{o}n de registros y sistemas de v\'{i}ctimas de trata de personas} para el \'{a}rea que Usted dirige en el  Ministerio del Interior. Al respecto, de conformidad con lo se\~{n}alado en la Orden de Servicio de la referencia, remito adjunto el Entregable \textnumero 1. Con la seguridad de contar con su aprobaci\'{o}n, adjunto adem\'{a}s mi recibo por honorarios profesionales por el 20\% del monto pactado (S/. 6400 de S/. 32000). 
+\section{Antecedentes}
 
-Sin otro particular, quedo de Usted. 
+El Ministerio del Interior, en general, y su Dirección General de Seguridad Democrática, en particular, tienen la necesidad de avanzar hacia una cultura organizacional donde sus políticas públicas estén basadas en la evidencia. En ese sentido, este trabajo busca contribuir al logro del Objetivo Estratégico \textnumero 7 (OE7): \emph{Elaborar la línea de base del Plan Nacional de Acción contra la Trata de Personas 2017-2021}.
+
+En concreto, este trabajo se orienta a lograr integrar bases de datos que existen en diversas entidades del Estado. Contar con estos datos integrados, será un paso clave para el cumplimiento del OE7, pues se tendrá al fin información comprensiva de la situación de la trata de personas, a partir de lo cual se contará con un sistema de indicadores que permitan realizar mayores análisis sobre la victimización de trata de personas, en cunplimiento del Plan Nacional de trata de personas 2017-2021
+
+\section{Acciones y/o coordinaciones llevadas a cabo}
+
+A la fecha, se han llevado a cabo las siguientes actividades:
+
+\begin{enumerate}
+\item Con fecha 14 de noviembre de 2017, se recibió la Orden de Servicio 4031, donde se nos encarga el servicio motivo de la consultoría.
+
+\item Del 15 al 17 de noviembre de 2017, se coordinó con el área usuaria o cliente del Ministerio del Interior (MININTER) las especificaciones y expectativas concretas de este trabajo. Durante las coordinaciones, se contó con el apoyo directo del personal de la Dirección de Gestión del Conocimiento para la Seguridad del MININTER.
+
+
+\item Del 17 al 18 de noviembre 2017, se procedió a elaborar el primer entregable, así como a planificar las acciones a seguir.
+
+\end{enumerate}
+
+\section{Insumos recibidos}
+
+A la fecha, se sabe que el cliente del MININTER necesita la integración de diversas tablas de datos donde se encuentra información sobre la trata de personas. Estos datos provendrían de entidades como el Ministerio de la Mujer y Poblaciones Vulnerables (MIMP), el Ministerio de Justicia (MINJUS), el Ministerio Público (MP), asi como de sistemas de información de la Policia Nacional del Perú. Sin embargo, a la fecha no se ha recibido aún ninguna de estas tablas de datos.
+
+\section{Cumplimiento}
+
+En el presente informe se adjunta el primer entregable, dentro del plazo indicado en la orden de servicio de la referencia. Este entregable detalla el plan de trabajo, incluyendo el cronograma que cumple con los plazos establecidos. El plan de trabajo consta de siete páginas.
+
+\section{Condiciones para el siguiente entregable}
+
+Considerando que restan quince (15) días para la siguiente fecha de entrega, se informa que el tiempo de contigencia calculado por el consultor es de cinco días. En ese sentido, si los datos no están en posesión de consultor hasta el viernes 24 de noviembre, el cálculo de las fechas se irán extendiendo: cuando se reciban el siguiente entregable se entregará diez dias después de la recepción, sin que ello afecte ni penalice el costo del servicio.
+
+\section{Solicitud de pago}
+
+Habiendo cumplido con lo estipulado en la orden de servicio de la referencia, adjunto mi recibo por honorarios profesionales \textnumero E001- 31 por el 20\% del monto pactado (S/. 6400 de S/. 32000); a fin de que, con su aprobación a este primer avance, se pueda cancelar tal monto. Así mismo, se adjunta  este informe, el formato de declaración juarada entregado,  la carta de autorización de depósito en mi cuenta del BBVA Banco Continental via código interbancario (CCI), y una copia de la orden de servicio de la referencia.
+
+\section{Conclusiones}
+
+De lo informado en este documento, se tiene en claro que:
+
+\begin{itemize}
+\item El trabajo de esta consultoria, gracias a las coordinaciones con el cliente del MINITER, está bien delimitado y claro.
+\item Una vez recibido los insumos para el trabajo, los datos, hay un plan de trabajo concreto a seguir.
+\item El consultor entiende que está cumpliendo con lo estipulado en la orden de servicio de la referencia y considera que se le debe abonar el primer pago por el 20\% del total.
+
+\end{itemize}
+
+
+Es todo cuanto se informa para su conocimiento y fines que se sirva determinar.
 
 
 
 
 \vspace{75px}
 \noindent
-\includegraphics[width=6cm]{firma}\\
-{\bf Jos\'{e} Manuel Magallanes}\\
-DNI: {\bf 0725506}\\
+%\includegraphics[width=6cm]{firma}\\
+{\bf Dr. José Manuel Magallanes, Ph.D.}\\
+DNI: {\bf 07255056}\\
 Correo Electronico: {\bf josemanuel.magallanes@gmail.com}\\
 Tel\'{e}fono m\'{o}vil: {\bf +51 985 125 105}
 
