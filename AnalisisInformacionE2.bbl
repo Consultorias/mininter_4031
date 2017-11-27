@@ -1,0 +1,53 @@
+\begin{thebibliography}{1}
+
+\bibitem{observatorio_nacional_de_politica_criminal_indaga_como_2017}
+{Observatorio Nacional de Política Criminal (INDAGA)} and {Consejo Nacional de
+  Politica Criminal}.
+\newblock ¿{Cómo} funciona la trata de personas en el {Perú}?
+\newblock Boletín~I, Ministerio de Justicia y Derechos Humanos, Lima, Perú,
+  2017.
+
+\bibitem{policia_nacional_del_peru_normas_2015}
+{Policia Nacional del Perú}.
+\newblock Normas que regulan el procedimiento y uso del sistema informático de
+  denuncias policiales ({SIDPOL}) - {Directiva} {Número}
+  13-10-2015-{DIRGEN}-{PNP}/{DIRETIC}-{PNP}-{B}, 2015.
+
+\bibitem{policia_nacional_del_peru_manuel_2015}
+{Policia Nacional del Perú}.
+\newblock Manuel de {Usuario} del {Sistema} de {Información} {Policial}
+  {ESINPOL}, 2015.
+
+\bibitem{capital_humano_y_social_alternativo_guipara_2016}
+{Capital Humano y Social Alternativo} and {Ministerio de la Mujer y Poblaciones
+  Vulnerables}.
+\newblock Guía para la {Atención} a {Víctimas} de la {Trata} de {Personas}
+  en {Centros} de {Atención} {Residencial} de {Niñas}, {Niños} y
+  {Adolescentes}.
+\newblock Technical report, Ministerio de la Mujer y Poblaciones Vulnerables,
+  Lima, Perú, May 2016.
+
+\bibitem{viviano_que_2014}
+Teresa Viviano.
+\newblock ¿{Qué} son los {Centros} de {Emergencia} {Mujer}?
+\newblock Technical report, Ministerio de la Mujer y Poblaciones Vulnerables,
+  Lima, Perú, October 2014.
+
+\bibitem{magallanes_reyes_cleaning_2017}
+Jose~Manuel Magallanes~Reyes.
+\newblock Cleaning {Data}.
+\newblock In {\em Introducing to data science for social and policy research:
+  collecting to organizing data with {R} and {Python}}, pages 152--162.
+  Cambridge University Press, Cambridge, United Kingdom New York, USA Port
+  Melbourne, Australia Delhi, India Singapore, 2017.
+\newblock OCLC: 998518603.
+
+\bibitem{gelman_missing_2007}
+Andrew Gelman and Jennifer Hill.
+\newblock Missing {Data} {Imputation}.
+\newblock In {\em Data analysis using regression and multilevel/hierarchical
+  models}, Analytical methods for social research, pages 529--543. Cambridge
+  University Press, Cambridge ; New York, 2007.
+\newblock OCLC: ocm67375137.
+
+\end{thebibliography}

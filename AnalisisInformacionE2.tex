@@ -1,0 +1,208 @@
+\documentclass{article}
+\usepackage{graphicx}
+
+\usepackage{setspace}
+\doublespacing
+%\onehalfspacing
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}
+\usepackage[utf8]{inputenc}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\usepackage{xcolor}
+
+\usepackage{lipsum}
+\setlength\headheight{40pt} %% just to make warning go away. Adjust the value after looking into the warning.
+% \rhead{{\color{blue}\rule{1cm}{1cm}}}
+\fancyhf{}
+\rhead{\includegraphics[width=7cm]{logo}}
+
+
+\title{Servicio Especializado de Sistematización de Registros y Sistemas de Víctimas de Trata de Personas\\
+\vspace{50px}
+{\bf Análisis de la Información disponible sobre las bases de datos que contienen información sobre la trata de personas}}
+
+
+\author{\vspace{75px}Dr. José Manuel Magallanes, Ph.D}
+\date{\today}
+\usepackage{Sweave}
+\begin{document}
+\input{AnalisisInformacionE2-concordance}
+\maketitle
+\thispagestyle{empty}
+
+%#############
+\clearpage
+\setcounter{page}{1}
+\section{Presentación}
+
+La base de datos integrada que requiere este trabao, necesita justamente integrar diversas fuentes de datos, las cuáles no han sido necesariamente diseñadas para ser integradas una con la otra.
+
+Estas bases de datos han sido identificadas, y provienen de las siguientes instituciones:
+\begin{itemize}
+
+
+\item Policia Nacional del Perú:
+\begin{itemize}
+\item Sistema de Registro y Estad\'{i}stica del delito de Trata de Personas y afines (RETA).
+\item Sistemas de denuncias e informaci\'{o}n policial (SIDPOL y ESINPOL), sobre denuncias formuladas ante comisar\'{i}as y unidades especializadas.
+\end{itemize}
+
+\item Ministerio Público (MP):
+\begin{itemize}
+\item Sistema de Informaci\'{o}n Estrat\'{e}gica sobre Trata de Personas (SISTRA), informaci\'{o}n de la investigaci\'{o}n de delitos de trata de personas.
+
+\end{itemize}
+
+
+\item Ministerio de Justicia (MINJUS)
+\begin{itemize}
+\item Registros  de denuncias y/o investigaciones seguidas.
+\end{itemize}
+
+\item Ministerio de la Mujer y Poblaciones Vulnerables (MIMP)
+\begin{itemize}
+\item Registros de atención de víctimas de trata en Centros de Emergencia Mujer.
+
+\item Registros de atención de víctimas de trata de los Centros de atención Residencial 
+\end{itemize}
+\end{itemize}
+
+Estos datos no son de libre acceso, por lo que sólo personal autorizado puede solicitarlo. En ese sentido, el trabajo final se hará con las data disponibles hasta el 1 de diciembre de 2017, para cumplir con el plan de trabajo que tiene como  fecha de culminación el 29 de diciembre, según los términos de referencia y la orden de servicio 4031.
+
+\section{Sobre la base de datos integrada}
+
+\subsection{Bases de datos fuentes}
+\subsubsection{Bases de Datos Comprehensivas}
+
+Las bases de datos que contiene la mayor cantidad de detalle sobre la trata de personas, precisamente por que fueron creados para ese fin son el RETA y el SINTRA \cite{observatorio_nacional_de_politica_criminal_indaga_como_2017}.
+
+\begin{enumerate}
+\item RETA: el Sistema de Registro y Estadísticas para la Trata de Personas y Delitos Relacionados - RETA- que se ha desarrollado en la \emph{web} para facilitar su acceso por el PNP desde cualquier lugar del país. RETA contiene información cualitativa y cuantitativa que incluye denuncias, operaciones e investigaciones policiales de casos de trata de personas y, en general, los delitos de explotación sexual, explotación laboral y tráfico de órganos humanos y partes del cuerpo como: información sobre los hechos, identificación de personas y tipificación de estos crímenes. Permite a la Fuerza de Policía y las Unidades Especiales de Investigación de Delitos una mejor caracterización del modus operandi del crimen organizado, definiciones de perfil de grupos altamente vulnerables y la capacidad de crear estadísticas oficiales a nivel nacional. El propio Sistema determina si el caso presentado es de trata de personas o no, de conformidad con la nueva Ley N. 28950 - Ley contra la trata de personas y la transferencia ilícita de migrantes. El Ministerio del Interior institucionalizó el Sistema RETA con la Resolución Ministerial Nº 2570-2006-IN / 0105 Esta Resolución y la Directiva N · 004-2007-IN / 0105 establecieron el procedimiento para el uso, presentación, registro, consulta e información de hechos.
+
+\item SISTRA: El Sistema de Información Estratégica sobre Trata de Personas - SISTRA es una base de datos que permite al Ministerio Público a nivel nacional registrar las denuncias en materia de trata de personas. Asimismo, permite conocer el estado de los casos registrados, monitorearlos y la visualización de estadísticas sobre casos de trata de personas tramitados ante el Ministerio Público. Permitirá además conocer el estado de los casos, así como hacer un monitoreo de su desarrollo de manera permanente, y obtener estadísticas en tiempo real para hacer más eficaz la labor de los magistrados del Ministerio Público. Este sistema se ha creado en el marco del Proyecto ACCBP 2010-059 “Prevención del crimen y la corrupción a través del fortalecimiento de capacidades de jueces y fiscales en temas de trata de personas y tráfico ilícito de migrantes”, financiado por el Programa de Desarrollo de Capacidades contra el Crimen del Gobierno de Canadá (ACCBP, por sus siglas en inglés) y ejecutado por la Organización Internacional para las Migraciones (OIM) – Misión en el Perú. El SISTRA sólo puede ser llenado por operadores del Ministerio Público, a través del ingreso autorizado con un usuario y clave otorgada por el Ministerio Público. En aquellos distritos judiciales en los que se haya implementado el nuevo Código Procesal Penal, serán los fiscales, con apoyo de los operadores de Mesa de partes, los encargados de registrar la información. En los demás casos, serán los operadores de Mesa de partes quienes podrán registrar la información. El registro de casos de trata de personas en el SISTRA interactúa con el Sistema de Apoyo al Trabajo Fiscal (SIATF), para aquellos distritos judiciales en los que aún no se aplica el nuevo Código Procesal Penal; y con el Sistema de Gestión Fiscal (SGF), para los 23 distritos judiciales en los que se aplica el nuevo Código Procesal Penal. Una vez ingresada esta información, el SISTRA extraerá de la base de datos, las variables a ser analizadas y las incorporará en el portal, la cual será complementada con información de las carpetas fiscales.
+\end{enumerate}
+
+\subsubsection{Bases de Datos Auxiliares}
+Estas bases de datos cumplirán la función de complementar las bases anteriores. De hecho, cada uno recoge información sobre trata de personas, pero además de otros tipos de delitos. 
+\begin{enumerate}
+\item SIDPOL: El Sistema Informático de Denuncias Policiales “SIDPOL” ha sido creado para automatizar funciones y procesos relacionados al registro de Denuncias Policiales; asimismo, determinar información que será de mucha ayuda en la toma de decisiones a nivel de Comisarías, Distritos y Divisiones Territoriales \cite{policia_nacional_del_peru_normas_2015}. 
+
+\item ESINPOL: El sistema de información policial ESINPOL sirve para la realización de
+Consultas de Personas Requisitoriadas, Vehículos Requisitoriados, Antecedentes de Personas y en la Emisión de Certificados de Antecedentes Policiales, con lo cual brindar apoyo tecnológico a todas las Unidades
+Policiales a nivel nacional \cite{policia_nacional_del_peru_manuel_2015}. 
+\item MINJUS: En el caso del MINJUS se está solicitando información que tengan disponible sobre la trata de personas. No hay un sistema particular, pero estos casos figuran dentro de todos los casos que archivan sus sistemas.
+\item MIMP
+  \begin{enumerate}
+  \item Sistema de Registro del CAR: Un centro de atención residencial, CAR, es el espacio físico administrado por una institución pública, privada, mixta o comunal donde viven niñas, niños y adolescentes en situación de abandono o riesgo, brindándoseles la protección y atención integral que requieren, de acuerdo con su particular situación, en un ambiente de buen trato y seguridad, con el objetivo principal de propiciar su reinserción familiar y social, o bien, promover su adopción \cite{capital_humano_y_social_alternativo_guipara_2016}. Aquí se incluye los casos de trata de personas, por lo que su disponibilidad puede completar la información integrada a generar.
+  \item Sistema de Registro del CEM: Un Centro de Emergencia Mujer, CEM, es un servicio público especializado y gratuito, de atención integral y multidisciplinaria, para víctimas de violencia familiar y sexual, en el cual se brinda orientación legal, defensa judicial y consejería psicológica. Se procura la recuperación del daño sufrido y se presta asistencia social. Asimismo, en él se realizan actividades de prevención a través de capacitaciones, campañas comunicacionales, formación de agentes comunitarios y movilización de organizaciones \cite{viviano_que_2014}. Aquí también se incluye los casos de trata de personas, por lo que su disponibilidad puede completar la información integrada a generar.
+  \end{enumerate}
+
+\end{enumerate}
+
+\subsection{Estructura mínima}\label{minima}
+La base de datos integrada debe contener los siguientes campos:
+\begin{enumerate}
+\item {\bf Unidad de análisis}: Considerando que la trata de personas es un hecho que le ocurre a un individuo, se deb hacer todos los esfuerzos para que la unidad de análisis sea el individuo que ha experimentado tal situación.
+\item {\bf Información demográfica}: Esta es información clave para ser utilizada como variables de control:
+\begin{enumerate}
+\item Lugar de nacimiento: esto representa en sí tres columnas:
+  \begin{enumerate}
+  \item Departamento (o campo Región).
+  \item Provincia.
+  \item Distrito.
+  \end{enumerate}
+\item Fecha de nacimiento
+\item Lugar de residencia actual: esto representa también tres columnas:
+  \begin{enumerate}
+  \item Departamento (o campo Región).
+  \item Provincia.
+  \item Distrito.
+  \end{enumerate}
+\item Estado civil.
+\item Sexo.
+\end{enumerate}
+\item {\bf Información socioeconómica}: Esta serie de variables nos dan importante información de control:
+  \begin{enumerate}
+  \item Nivel educativo.
+  \item Situación laboral.
+  \end{enumerate}
+\item {\bf Persona que denuncia}: Es importante saber si la denuncia fue hecha por otra persona. Esta persona tendría sus propias variables de control demográficas y socioeconómicas.
+\item {\bf Relacion del denunciante con la victima}: Esta variable debe brindar información si el denunciante guarda relación:
+\begin{enumerate}
+\item Familiar.
+\item Laboral.
+\item Amical.
+\item Otra.
+\item Ninguna.
+\item No aplica (la victima misma hizo la denuncia).
+\end{enumerate}
+
+\item {\bf Lugar de explotación}:Saber la ubicación del lugar donde ocurría la explotación, esto incluye:
+  \begin{enumerate}
+  \item Departamento (o campo Región).
+  \item Provincia.
+  \item Distrito.
+  \end{enumerate}
+\item {\bf Lugar de rescate}:Saber la ubicación del lugar donde ocurrió el rescate, esto incluye:
+  \begin{enumerate}
+  \item Departamento (o campo Región).
+  \item Provincia.
+  \item Distrito.
+  \end{enumerate}
+\item {\bf Caso tipo}: tipología de trata. 
+\item {\bf fecha de inicial caso}: fecha en que se tomó conocimiento del delito.
+\item {\bf Caso situación}: situación actual.
+\item {\bf Fecha de situación actual}
+\item {\bf Código PNP-RETRA}: código del caso en RETRA Esto permitirá revisión detallada de casos en este sistema.
+\item {\bf Código PNP-ESINPOL}: código del caso en ESINPOL. Esto permitirá revisión detallada de casos en este sistema.
+\item {\bf Código PNP-SIDPOL}:código del caso en SIDPOL.Esto permitirá revisión detallada de casos en este sistema.
+\item {\bf Código MP-SINTRA}: código del caso en el SINTRA.Esto permitirá revisión detallada de casos en este sistema.
+\item {\bf Código MINJUS}: código del caso en el MINJUS.Esto permitirá revisión detallada de casos en este sistema.
+\item {\bf Código MIMP-CAR}: código del caso en el CAR del MIMP.Esto permitirá revisión detallada de casos en este sistema.
+\item {\bf Código MIMP-CEM}: código del caso en el CEM del MIMP.Esto permitirá revisión detallada de casos en este sistema.
+
+\end{enumerate}
+
+\subsection{Variables adicionales}
+
+A solicitud de los clientes del MININTER se puede añadir más variables. Se recomienda que las variables que se quieran añadir estén presentes para la mayoría de los casos; y así evitar ser eliminadas del análisis, como comentamos en la siguiente sub sección (\ref{imputa}).
+
+\subsection{Imputación y eliminación de variables}\label{imputa}
+
+El tipo de información es muy particular al individuo, por lo que no se aplicará ningún tipo de imputación, es decir, no se reemplazarán valores perdidos\cite{magallanes_reyes_cleaning_2017}. Sin embargo, si se observa que la aplicación de alguna técnica de imputación pudiese aplicarse una vez conocida la naturaleza y distribución de los datos, este decisión se reevaluará \cite{gelman_missing_2007}.
+
+Debe tenerse en cuenta que variables con muchos valores ausentes afectarán los cálculos, pues por defecto cada operación aritmética no las considerará, según sea el caso. En ese sentido, si una variable particular afecta muchas filas (unidades de análisis), ésta sería candidata a ser retirada, si es que ningún proceso de imputación se pudiese aplicar a ésta.
+
+
+\section{Estrategia para Organizar los Datos}
+\subsection{Campos clave}
+Se prevé tener dos tipos de campos clave:
+\begin{enumerate}
+\item Campos de intersección 
+\item Campos de trazabilidad
+\end{enumerate}
+
+Los \emph{campos de intersección} son los que permiten juntar las fuentes de datos en la base integrada final. Como la unidad de análisis es el agraviado, el campo natural de intersección es el \emph{documento nacional de identidad} (DNI). En ese sentido, como el campo debe ser único por columna, se asume que la víctima lo ha sido sólo una vez. En caso lo haya sido más de una vez, se creará un campo clave compuesto.
+
+Los {campos de trazabilidad} servirán para ubicar los casos y profundizar la investigación. Para esto, se ha incluido en la sub sección \ref{minima} los campos de códigos del caso en cada institución o unidad de ésta.
+
+\subsection{Historicidad y Profundidad}
+
+Lo más común cuando se cuenta con diversas fuentes de datos es que no sean compatibles en cuanto a antigüedad, es decir, el caso más antiguo en cada sistema no sería el mismo. De ahí que, los campos de intersección sólo sirven para juntar información que sea común en todos las fuentes de datos, pero no para los casos que no sean comunes. 
+
+Los casos no comunes se añadirán, con el objetivo de tener la mayor historia posible sobre la problemática, pero estos casos puden ser fuente de valores ausentes, y presentarán los retos que se discutió en la sub sección \ref{imputa}. 
+
+De lo anterior se desprende que los casos con mayor detalle son aquellos que son comunes en todas las fuentes de datos. Así, estos tendrán menos valores ausentes y permitirán un mejor análisis. Se prevé que los campos con mayor profundidad o detalle sean de los años más recientes.
+
+\subsection{Agregabilidad}
+
+Teniendo en cuenta que en la sub sección \ref{minima} se consideran variables de ubicación geográfica, se podrá agregar las unidades de análisis para crear información a estos niveles (distrital, provincial, departamental). Esto permitirá crear algun tipo de índice para poder identificar patrones espaciales o geográficos en el mapa político del Perú. La agregabilidad debe hacerse con la data completa a utilizar, y puede agregarse usando valores de tendencia central, conteos o proporciones. Nuevamente, la presencia de valores ausentes afecta la agregabilidad, por lo que se evaluará que casos se incluirán para mantener controlado este problema.   
+
+
+\bibliographystyle{unsrt}
+\bibliography{Mininter_4031_e1}
+
+\end{document}
